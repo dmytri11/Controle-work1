@@ -8,14 +8,14 @@
 //[“Russia”, “Denmark”, “Kazan”] → []
 Console.WriteLine("Введите любые 10 слов через Enter:");
 string[] array1 = new string[10];
-void  FillArray(string[] array1)
+void FillArray(string[] array1)
 {
-          for (int i = 0; i < array1.Length; i++)
-            {
-              array1[i] = Console.ReadLine();
-           }
-          Console.WriteLine("Массив до сортировки:");
-           Console.Read();
+    for (int i = 0; i < array1.Length; i++)
+    {
+        array1[i] = Console.ReadLine();
+    }
+    Console.WriteLine("Массив до сортировки:");
+    Console.Read();
 }
 string[] array2 = new string[array1.Length];
 void sorting(string[] array1, string[] array2)
@@ -23,10 +23,10 @@ void sorting(string[] array1, string[] array2)
     int count = 0;
     for (int i = 0; i < array1.Length; i++)
     {
-    if(array1[i].Length <= 3)
+        if (array1[i].Length <= 3)
         {
-        array2[count] = array1[i];
-        count++;
+            array2[count] = array1[i];
+            count++;
         }
     }
 }
